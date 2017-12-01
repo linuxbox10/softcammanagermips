@@ -1,0 +1,9 @@
+# gcam.server generated automatically by gcam 1.0-r0
+# Read more: Master-str 2016-2017 
+
+[account]
+user                          = dvbapi
+pwd                           = dvbapi
+au                            = 1
+group                         = 1
+

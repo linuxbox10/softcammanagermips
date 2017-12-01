@@ -1,0 +1,72 @@
+# ncam.server generated automatically by NCAM
+
+
+[reader]
+label                         = myemulator
+protocol                      = constcw
+device                        = /etc/tuxbox/config/SoftCam.Key
+caid                          = 0D00,0D02,090F,0500,1801,0604,2600,FFFF,0E00,4AE1,1010
+ident                         = 0D00:000000,000004,000010,000014,000020,0000C0,0000C4,0000C8,0000CC;0D02:000000,00008C,0000A0,0000A4,0000A8;090F:000000;0500:000000,030B00,023800,021110,007400,007800;1801:000000,007301,001101;0604:000000;2600:000000;FFFF:000000;0E00:000000;4AE1:000011,000014,0000FE;1010:000000
+group                         = 1
+
+[reader]
+label                         = myconstantcw
+enable                        = 0
+protocol                      = constcw
+device                        = /var/keys/constant.cw
+cacheex                       = 0
+cacheex_maxhop                = 0
+cacheex_allow_request         = 0
+group                         = 1
+dropbadcws                    = 0
+disablecrccws                 = 0
+
+[reader]
+label                         = emulator
+protocol                      = emu
+device                        = emulator
+caid                          = 090F,0500,1801,0604,2600,FFFF,0E00,4AE1,1010
+detect                        = cd
+ident                         = 090F:000000;0500:000000,023800,021110,007400,007800;1801:000000,007301,001101,002111;0604:000000;2600:000000;FFFF:000000;0E00:000000;4AE1:000011,000014,0000FE;1010:000000
+group                         = 1
+emmcache                      = 2,1,2,1
+emu_auproviders               = 0604:010200;0E00:000000;4AE1:000011,000014,0000FE;1010:000000
+
+####################### CCcam ############################
+[reader]
+label                         = server1
+enable                        = 1
+protocol                      = cccam
+device                        = host,port
+user                          = user
+password                      = pass
+group                         = 1
+cccversion                    = 2.0.11
+cccmaxhops                    = 2
+ccckeepalive                  = 1
+audisabled                    = 1
+disablecrccws                 = 2
+#disablecrccws_only_for        = 0500:032830,042820,030B00;1811:003311,003315;0100:003311
+
+####################### Ncamed ############################
+
+[reader]
+label                         = server2
+enable                        = 0
+protocol                      = newcamd
+device                        = host,port
+key                           = 0102030405060708091011121314
+user                          = user
+password                      = pass
+fallback                      = 1
+group                         = 1
+
+####################### Gbox ############################
+
+[reader]
+label                         = server3
+enable                        = 0
+protocol                      = gbox
+mg-encrypted                  = D: { 192.168.0.4 { 12345 34567 { ABCD1234 { 9 9 }}}}
+group                         = 3
+caid                          = 0300

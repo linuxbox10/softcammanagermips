@@ -1,0 +1,49 @@
+# gcam.server generated automatically by gcam 1.0-r0
+# Read more: Master-str 2016-2017 
+
+[reader]
+label                         = server1
+protocol                      = cccam
+device                        = host,port
+user                          = user
+password                      = pass
+inactivitytimeout             = 30
+group                         = 1
+cccversion                    = 2.0.11
+
+[reader]
+label                         = server2
+protocol                      = cccam
+device                        = host,port
+user                          = user
+password                      = pass
+inactivitytimeout             = 30
+group                         = 1
+cccversion                    = 2.3.0
+
+
+
+[reader]
+label                         = emulator
+protocol                      = emu
+device                        = emulator
+caid                          = 090F,0500,1801,0604,2600,FFFF,0E00,4AE1,1010
+detect                        = cd
+ident                         = 090F:000000;0500:000000,023800,021110,007400,007800;1801:000000,007301,001101,002111;0604:000000;2600:000000;FFFF:000000;0E00:000000;4AE1:000011,000014,0000FE;1010:000000
+group                         = 1
+emmcache                      = 2,1,2,1
+emu_auproviders               = 0604:010200;0E00:000000;4AE1:000011,000014,0000FE;1010:000000
+
+
+[reader]
+label                         = myconstantcw
+protocol                      = constcw
+device                        = /var/keys/constant.cw
+cacheex                       = 0
+cacheex_maxhop                = 0
+cacheex_allow_request         = 0
+group                         = 1
+dropbadcws                    = 0
+disablecrccws                 = 0
+
+

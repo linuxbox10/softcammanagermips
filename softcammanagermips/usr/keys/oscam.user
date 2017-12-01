@@ -1,0 +1,5 @@
+[account]
+user                          = dvbapi
+group                         = 1,2,3,4,5,6
+au                            = 1
+

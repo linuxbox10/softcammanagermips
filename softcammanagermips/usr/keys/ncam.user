@@ -1,0 +1,7 @@
+# ncam.server generated automatically by ncam
+
+[account]
+user                          = dm800se
+pwd                           = dm800se
+au                            = 1
+group                         = 1,2,3,4

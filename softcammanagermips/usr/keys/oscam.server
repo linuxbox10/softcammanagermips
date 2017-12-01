@@ -1,0 +1,199 @@
+[reader]
+label                         = sky_irdeto_card
+enable                        = 0
+protocol                      = internal
+device                        = /dev/sci0
+caid                          = 1702,1833
+fix07                         = 0
+detect                        = cd
+group                         = 1
+emmcache                      = 1,1,2
+
+[reader]
+label                         = sky_nagra_card
+enable                        = 0
+protocol                      = internal
+device                        = /dev/sci0
+caid                          = 1833
+fix07                         = 0
+boxkey                        = A7642F57BC96D37C
+rsakey                        = BA3894AD7659D65AB19272D34BD144CFDA4967F8A7C1BCCB633EE8C70557B89A6815741B3672E4BD60EED208A3DFF52BDD3A6D36383CDFF5E6FD254D9B834C79
+detect                        = cd
+group                         = 1
+emmcache                      = 1,1,2
+
+[reader]
+label                         = sky_v13_card
+enable                        = 0
+protocol                      = internal
+device                        = /dev/sci0
+caid                          = 09C4
+boxid                         = 12345678
+detect                        = cd
+group                         = 1
+emmcache                      = 1,1,2
+blockemm-unknown              = 1
+blockemm-s                    = 1
+blockemm-g                    = 1
+saveemm-u                     = 1
+
+[reader]
+label                         = sky_v14_card
+enable                        = 0
+protocol                      = internal
+device                        = /dev/sci0
+caid                          = 098C
+boxid                         = 12345678
+detect                        = cd
+group                         = 1
+emmcache                      = 1,1,2
+blockemm-unknown              = 1
+blockemm-s                    = 1
+blockemm-g                    = 1
+saveemm-u                     = 1
+
+[reader]
+label                         = hdplus_card_white
+enable                        = 0
+protocol                      = internal
+device                        = /dev/sci0
+caid                          = 1830
+fix07                         = 0
+boxkey                        = A7642F57BC96D37C
+rsakey                        = BF358B5461863130686FC933FB541FFCED682F3680F09DBC1A23829FB3B2F766B9DD1BF3B3ECC9AD6661B753DCC3A9624156F9EB64E8168EF09E4D9C5CCA4DD5
+detect                        = cd
+group                         = 1
+emmcache                      = 1,1,2
+
+[reader]
+label                         = hdplus_card_black
+enable                        = 0
+protocol                      = internal
+device                        = /dev/sci0
+caid                          = 1843
+fix07                         = 0
+boxkey                        = A7642F57BC96D37C
+rsakey                        = BF358B5461863130686FC933FB541FFCED682F3680F09DBC1A23829FB3B2F766B9DD1BF3B3ECC9AD6661B753DCC3A9624156F9EB64E8168EF09E4D9C5CCA4DD5
+detect                        = cd
+mhz                           = 368
+cardmhz                       = 368
+group                         = 1
+emmcache                      = 1,1,2
+
+[reader]
+label                         = mtv_card
+enable                        = 0
+protocol                      = internal
+device                        = /dev/sci0
+caid                          = 0B00
+fix07                         = 0
+detect                        = cd
+group                         = 1
+emmcache                      = 1,1,2
+
+[reader]
+label                         = hallotv_card
+enable                        = 0
+protocol                      = internal
+device                        = /dev/sci0
+caid                          = 0B02
+fix07                         = 0
+detect                        = cd
+group                         = 1
+emmcache                      = 1,1,2
+
+[reader]
+label                         = viaccess_card
+enable                        = 0
+protocol                      = internal
+device                        = /dev/sci0
+caid                          = 0500
+fix07                         = 0
+detect                        = cd
+group                         = 1
+emmcache                      = 1,1,2
+
+[reader]
+label                         = orf_card_cw
+enable                        = 0
+protocol                      = internal
+device                        = /dev/sci0
+caid                          = 0D05
+fix07                         = 0
+detect                        = cd
+group                         = 1
+emmcache                      = 1,1,2
+
+[reader]
+label                         = orf_ice_card_cw
+enable                        = 0
+protocol                      = internal
+device                        = /dev/sci0
+caid                          = 0D95
+fix07                         = 0
+detect                        = cd
+group                         = 1
+emmcache                      = 1,1,2
+
+[reader]
+label                         = orf_ice_card_irdeto
+enable                        = 0
+protocol                      = internal
+device                        = /dev/sci0
+caid                          = 0648
+fix07                         = 0
+boxkey                        = 48454C4C4F4F5246
+rsakey                        = 70FEA1692180154CD1C9777B2D7844927EE9B85D5EAF9FF0170B575E7BFE5D355FCBABFC6FE8667C281B853A03D12750270BB287C5756D9281F2CEF1D09AC219
+force_irdeto                  = 1
+detect                        = cd
+cardmhz                       = 600
+ident                         = 0648:000000
+group                         = 1
+emmcache                      = 1,1,2
+
+[reader]
+label                         = cccam_server
+enable                        = 0
+protocol                      = cccam
+device                        = blablabla.dyndns.org,12000
+user                          = user
+password                      = password
+inactivitytimeout             = 1
+group                         = 2
+cccversion                    = 2.3.0
+ccckeepalive                  = 1
+
+[reader]
+label                         = newcamd_server
+enable                        = 0
+protocol                      = newcamd
+device                        = blablabla.dyndns.org,66666
+key                           = 0102030405060708091011121314
+user                          = user
+password                      = password
+group                         = 3
+
+[reader]
+label                         = camd3_server
+enable                        = 0
+protocol                      = cs357x
+device                        = blablabla.dyndns.org,20248
+user                          = user
+password                      = password
+group                         = 4
+
+[reader]
+label                         = keyreader
+protocol                      = emu
+device                        = Emulator
+detect                        = cd
+group                         = 5
+
+[reader]
+label                         = myconstantcw
+enable                        = 0
+protocol                      = constcw
+device                        = 1
+group                         = 6
+
+
